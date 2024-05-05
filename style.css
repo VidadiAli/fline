@@ -1,0 +1,419 @@
+::marker {
+    color: var(--color2);
+}
+
+main>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+main>div>div {
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+    position: relative;
+    transition: .5s;
+    border: 1px solid var(--color1);
+    overflow: hidden;
+}
+
+main>div>div::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    rotate: 45deg;
+    background: linear-gradient(to left, var(--color2), var(--color1));
+}
+
+main>div>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    scale: 1;
+    transition: .5s;
+}
+
+main>div>div>div {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    border-radius: 10px;
+    border: 1px solid var(--color2);
+    box-shadow: inset 0px 0px 5px white;
+    padding: 7px;
+}
+
+main>div>div>div>span {
+    background-color: var(--color1);
+    padding: 4px 8px;
+    color: white;
+    font-weight: 600;
+    display: inline;
+    font-size: .75rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+main>div>div>div>div {
+    display: flex;
+    gap: 5px;
+}
+
+main>div>div>div>div>a {
+    background: linear-gradient(to left, var(--color2), var(--color1));
+    padding: 4px 13px 5px;
+    color: white;
+    font-weight: 400;
+    display: inline;
+    font-size: .65rem;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+main>div>div>div>div>a:hover {
+    background: linear-gradient(to left, var(--color1), var(--color2));
+    color: white;
+}
+
+main>a {
+    padding: 20px 0;
+    border-radius: 5px;
+    background: linear-gradient(to left, var(--color1), var(--color2));
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+    width: 190px;
+    display: inline-block;
+    text-align: center;
+}
+
+main>a:hover {
+    color: white;
+    width: 100%;
+}
+
+main>.promouter {
+    margin: 40px 0;
+    padding: 30px 0px 15px;
+    border-top: 1px solid lightgray;
+    border-radius: 10px;
+    background-image: url(profil/FLINE.png);
+    background-size: 300px;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+main>.promouter>h3 {
+    color: var(--color2);
+    font-weight: 900;
+}
+
+main>.promouter>p {
+    color: var(--color1);
+    font-weight: 600;
+    padding: 30px 0;
+}
+
+main>.promouter>div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+main>.promouter>div>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 10px 10px 35px;
+    box-shadow: 0px 0px 5px lightgray;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    position: relative;
+    transition: .5s;
+    background-color: white;
+}
+
+main>.promouter>div>div:hover {
+    transform: translateY(-20px);
+}
+
+main>.promouter>div>div>h5 {
+    color: var(--color1);
+}
+
+main>.promouter>div>div>iframe {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+main>.promouter>div>div>a {
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+    background-color: var(--color1);
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 50%;
+    border: 5px solid white;
+    transition: .5s;
+    padding: 0;
+}
+
+main>.promouter>div>div>a::before {
+    position: absolute;
+    content: '';
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border-top: 2.5px solid lightgray;
+    border-radius: 50%;
+}
+
+main>.promouter>div>div>a:hover {
+    border-color: var(--color1);
+    color: white;
+}
+
+
+
+
+main>p {
+    position: fixed;
+    bottom: 1vh;
+    left: 5%;
+    background-color: var(--color1);
+    color: white;
+    z-index: 10;
+    height: calc(100% - (1vh + 85px));
+    width: 90%;
+    padding: 40px 10px 10px;
+    text-align: justify;
+    overflow-y: scroll;
+    border-radius: 10px;
+    box-shadow: 0px 0px 80px rgb(93, 93, 93);
+}
+
+main>p>i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 1.5rem;
+    border: 1px solid white;
+    color: white;
+    font-weight: 900;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+
+@media(max-width: 1300px) {
+    main>div {
+        padding: 70px 0;
+    }
+
+    main>div>div {
+        width: 190px;
+        height: 170px;
+    }
+
+    main>div>div>div>span {
+        font-size: .7rem;
+        margin-bottom: 3px;
+    }
+
+    main>div>div>div>div>a {
+        font-size: .5rem;
+        padding: 4px 9px 5px;
+    }
+
+    main>.promouter>div {
+        gap: 10px;
+    }
+}
+
+
+@media(max-width: 1150px) {
+    main>div>div {
+        width: 170px;
+        height: 150px;
+    }
+
+    main>.promouter>div {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    main>.promouter>div>div {
+        width: 48%;
+        margin-bottom: 50px;
+    }
+}
+
+/*planşet mod*/
+
+@media(max-width: 1000px) {
+    main>.promouter {
+        margin-bottom: 10px;
+    }
+}
+
+
+@media(max-width: 755px) {
+    main>div>div {
+        width: 180px;
+        height: 170px;
+    }
+
+    main>.promouter>p {
+        text-align: justify;
+    }
+}
+
+
+@media(max-width: 600px) {
+    main>div>div {
+        width: 140px;
+        height: 140px;
+    }
+
+    main>a {
+        padding: 10px 0;
+        width: 140px;
+    }
+
+    main>.promouter>div {
+        justify-content: center;
+    }
+
+    main>.promouter>div>div {
+        width: 80%;
+    }
+}
+
+
+@media(max-width: 490px) {
+    main>.mother-of-carosel {
+        margin: 20px 0;
+        border: 1px solid var(--color1);
+        border-radius: 10px;
+        height: 270px;
+        position: relative;
+        z-index: 0;
+    }
+
+    main>.mother-of-carosel::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .3);
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+
+
+    main>.mother-of-carosel>.carousel {
+        width: 100%;
+        height: 100%;
+    }
+
+    main>.mother-of-carosel>.carousel>.carousel-inner {
+        width: 100%;
+        height: 100%;
+    }
+
+    main>.mother-of-carosel>.carousel>.carousel-inner>.carousel-item {
+        width: 100%;
+        height: 100%;
+    }
+
+    main>.mother-of-carosel>.carousel>.carousel-inner>.carousel-item>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    main>.mother-of-carosel>.carousel>.carousel-inner>.carousel-item>.box-element {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10000;
+        padding: 10px;
+    }
+
+    main>.mother-of-carosel>.carousel>.carousel-inner>.carousel-item>.box-element>span {
+        background-color: var(--color1);
+        padding: 10px 20px;
+        color: white;
+        font-weight: 600;
+        display: inline;
+        font-size: 1rem;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    main>.mother-of-carosel>.carousel>.carousel-inner>.carousel-item>.box-element>div {
+        display: flex;
+        gap: 5px;
+    }
+
+    main>.mother-of-carosel>.carousel>.carousel-inner>.carousel-item>.box-element>div>a {
+        background: linear-gradient(to left, var(--color2), var(--color1));
+        width: 100%;
+        padding: 10px;
+        color: white;
+        font-weight: 400;
+        text-align: center;
+        font-size: .9rem;
+        text-decoration: none;
+        border-radius: 3px;
+    }
+
+    main>.mother-of-carosel>.carousel>.carousel-inner>.carousel-item>.box-element>div>a:hover {
+        background: linear-gradient(to left, var(--color1), var(--color2));
+        color: white;
+    }
+
+
+    main>.mother-of-carosel>.carousel>.carousel-indicators {
+        z-index: 1000 !important;
+    }
+
+    main>.promouter>div>div {
+        width: 100%;
+    }
+
+    main>.promouter>div>div>a {
+        width: 80px;
+        height: 80px;
+    }
+
+    main>.promouter>div>div:hover {
+        transform: translateY(0px);
+    }
+}

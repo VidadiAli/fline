@@ -1,0 +1,18 @@
+[
+    {
+        "nameOfArtist" : "Fərid",
+        "surnameOfArtist" : "Əhmədli",
+        "musicsOfArtist" : ["Hold me", "Gunəş", "Sən-sən"],
+        "pisctureOfArrtist" : "image/ferid.png",
+        "birthOfArtist" : "09-08-1992",
+        "countryOfArtist" : "Azerbaijan"
+    }, 
+    {
+        "nameOfArtist" : "Fərid",
+        "surnameOfArtist" : "Əhmədli",
+        "musicsOfArtist" : ["Hold me", "Gunəş", "Sən-sən"],
+        "pisctureOfArrtist" : "image/ferid.png",
+        "birthOfArtist" : "09-08-1992",
+        "countryOfArtist" : "Azerbaijan"
+    }
+]
